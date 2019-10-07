@@ -485,7 +485,7 @@ class DobbeltLenketListeTest {
             System.out.println
                     ("Oppgave 3å3: Det skal kastes et unntak når fra er negativ!");
         } catch (Exception e) {
-            if (!e.getClass().getName().equals("java.lang.IllegalArgumentException")) {
+            if (!e.getClass().getName().equals("java.lang.IndexOutOfBoundsException")) {
                 System.out.println
                         ("Oppgave 3å4: Skal ha IllegalArgumentException her!");
                 antallFeil++;
